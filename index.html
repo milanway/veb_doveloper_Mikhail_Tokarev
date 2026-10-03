@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Прелоадер (показывает заботу о UX) -->
+    <!-- Прелоадер -->
     <div class="preloader" id="preloader">
         <div class="preloader__spinner"></div>
     </div>
@@ -39,12 +39,11 @@
             </nav>
 
             <div class="header__actions">
-                <!-- Тумблер темы -->
                 <button class="theme-toggle" id="theme-toggle" aria-label="Переключить тему">
                     <i class="ph ph-moon"></i>
                 </button>
                 
-                <a href="#" class="btn btn--outline btn--small download-btn" download>
+                <a href="resume.pdf" class="btn btn--outline btn--small download-btn" download>
                     <i class="ph ph-download-simple"></i> Скачать резюме
                 </a>
                 
@@ -60,7 +59,8 @@
         <section id="hero" class="hero">
             <div class="container hero__container">
                 <div class="hero__image-wrapper reveal">
-                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop" alt="Михаил Токарев" class="hero__img" fetchpriority="high">
+                    <!-- ⚠️ Замени ссылку на своё фото: img/photo.jpg -->
+                    <img src="img/photo.jpg" alt="Михаил Токарев" class="hero__img" fetchpriority="high">
                 </div>
                 <div class="hero__content reveal">
                     <span class="hero__greeting">Привет, меня зовут</span>
@@ -69,16 +69,16 @@
                     
                     <div class="hero__actions">
                         <a href="#contacts" class="btn btn--primary">Связаться со мной <i class="ph ph-arrow-right"></i></a>
-                        <a href="#" class="btn btn--outline" download>Мое резюме <i class="ph ph-download-simple"></i></a>
+                        <a href="resume.pdf" class="btn btn--outline" download>Мое резюме <i class="ph ph-download-simple"></i></a>
                     </div>
                 </div>
                 <div class="hero__sidebar reveal">
                     <p class="hero__text">Я создаю продукты, которые делают жизнь людей проще и удобнее.</p>
                     <div class="socials">
-                        <a href="#" aria-label="Telegram"><i class="ph ph-telegram-logo"></i></a>
+                        <a href="https://t.me/milanway" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="ph ph-telegram-logo"></i></a>
                         <a href="#" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
-                        <a href="#" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+                        <a href="mailto:milanway@inbox.ru" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
             </article>
 
             <div class="quote-card reveal">
-                <p>«Хороший код — это не просто решение задачи, это забота о людях, которые будут его использовать».</p>
+                <p>«Хороший код — это не просто решение задачи, это забота о людях, которые будут его использовать»</p>
             </div>
         </section>
 
@@ -209,10 +209,10 @@
                         <i class="ph ph-arrow-up-right"></i>
                     </a>
                     <a href="#" class="project-item" target="_blank" rel="noopener noreferrer">
-                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=200&auto=format&fit=crop" alt="Portfolio" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=200&auto=format&fit=crop" alt="Расписание МПГУ" loading="lazy">
                         <div class="project-info">
-                            <h3>Portfolio</h3>
-                            <p>Сайт-визитка. React, Framer Motion, адаптивная верстка.</p>
+                            <h3>Расписание МПГУ</h3>
+                            <p>Веб-приложение для просмотра расписания. React, REST API, адаптивная верстка.</p>
                         </div>
                         <i class="ph ph-arrow-up-right"></i>
                     </a>
@@ -226,22 +226,22 @@
                 <div class="contacts__info">
                     <h2>Давайте сотрудничать!</h2>
                     <p>Я открыт к новым возможностям, интересным проектам и предложениям. Напишите мне — буду рад обсудить сотрудничество!</p>
-                    <a href="mailto:mikhail.tokarev@mail.ru" class="btn btn--primary contacts__btn">Написать мне <i class="ph ph-arrow-right"></i></a>
+                    <a href="mailto:milanway@inbox.ru" class="btn btn--primary contacts__btn">Написать мне <i class="ph ph-arrow-right"></i></a>
                 </div>
                 
                 <div class="contacts__links">
-                    <a href="https://t.me/mikhail_tk" class="contact-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/milanway" class="contact-link" target="_blank" rel="noopener noreferrer">
                         <i class="ph ph-telegram-logo"></i>
                         <div>
                             <span>Telegram</span>
-                            <strong>@mikhail_tk</strong>
+                            <strong>@milanway</strong>
                         </div>
                     </a>
-                    <a href="mailto:mikhail.tokarev@mail.ru" class="contact-link">
+                    <a href="mailto:milanway@inbox.ru" class="contact-link">
                         <i class="ph ph-envelope-simple"></i>
                         <div>
                             <span>Почта</span>
-                            <strong>mikhail.tokarev@mail.ru</strong>
+                            <strong>milanway@inbox.ru</strong>
                         </div>
                     </a>
                     <a href="https://linkedin.com/in/mikhail-tokarev" class="contact-link" target="_blank" rel="noopener noreferrer">
@@ -254,11 +254,11 @@
                 </div>
                 
                 <div class="contacts__details">
-                    <a href="tel:+79991234567" class="contact-link">
+                    <a href="tel:+79161522331" class="contact-link">
                         <i class="ph ph-phone"></i>
                         <div>
                             <span>Телефон</span>
-                            <strong>+7 (999) 123-45-67</strong>
+                            <strong>+7 (916) 152-23-31</strong>
                         </div>
                     </a>
                     <div class="contact-link">
@@ -275,8 +275,8 @@
 
     <footer class="footer">
         <div class="container footer__container">
-            <p>© 2026 Михаил Токарев • Frontend-разработчик</p>
-            <p>Сделано с <i class="ph ph-heart"></i> и вниманием к деталям</p>
+            <p>© 2026 Михаил Токарев • Frontend-разработчик • +7 (916) 152-23-31</p>
+            <p><i class="ph ph-heart"></i></p>
         </div>
     </footer>
 
