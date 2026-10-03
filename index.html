@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио Михаила Токарева — Frontend-разработчика. React, TypeScript, Next.js. Поиск работы.">
+    <title>Михаил Токарев | Frontend-разработчик</title>
+    
+    <!-- Оптимизация загрузки шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Иконки Phosphor -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Прелоадер (показывает заботу о UX) -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__spinner"></div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#hero" class="logo" aria-label="На главную">МТ</a>
+            
+            <nav class="nav" id="nav-menu" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link active">Главная</a></li>
+                    <li><a href="#about" class="nav__link">Обо мне</a></li>
+                    <li><a href="#skills" class="nav__link">Навыки</a></li>
+                    <li><a href="#experience" class="nav__link">Опыт</a></li>
+                    <li><a href="#projects" class="nav__link">Проекты</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <!-- Тумблер темы -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Переключить тему">
+                    <i class="ph ph-moon"></i>
+                </button>
+                
+                <a href="#" class="btn btn--outline btn--small download-btn" download>
+                    <i class="ph ph-download-simple"></i> Скачать резюме
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Открыть меню" aria-expanded="false">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главный экран -->
+        <section id="hero" class="hero">
+            <div class="container hero__container">
+                <div class="hero__image-wrapper reveal">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1000&auto=format&fit=crop" alt="Михаил Токарев" class="hero__img" fetchpriority="high">
+                </div>
+                <div class="hero__content reveal">
+                    <span class="hero__greeting">Привет, меня зовут</span>
+                    <h1 class="hero__title">Михаил Токарев</h1>
+                    <p class="hero__subtitle">Frontend-разработчик | Создаю современные и удобные веб-приложения</p>
+                    
+                    <div class="hero__actions">
+                        <a href="#contacts" class="btn btn--primary">Связаться со мной <i class="ph ph-arrow-right"></i></a>
+                        <a href="#" class="btn btn--outline" download>Мое резюме <i class="ph ph-download-simple"></i></a>
+                    </div>
+                </div>
+                <div class="hero__sidebar reveal">
+                    <p class="hero__text">Я создаю продукты, которые делают жизнь людей проще и удобнее.</p>
+                    <div class="socials">
+                        <a href="#" aria-label="Telegram"><i class="ph ph-telegram-logo"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навыки и Обо мне -->
+        <section class="grid-sections container">
+            <article id="skills" class="card skills-card reveal">
+                <div class="card__header">
+                    <i class="ph ph-gear"></i>
+                    <h2>Мои навыки</h2>
+                </div>
+                <div class="tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3 / SCSS</span>
+                    <span class="tag">JavaScript (ES6+)</span>
+                    <span class="tag">React</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Redux Toolkit</span>
+                    <span class="tag">Git / GitHub</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">Адаптивная верстка</span>
+                    <span class="tag">Webpack / Vite</span>
+                </div>
+            </article>
+
+            <article id="about" class="card about-card reveal">
+                <div class="card__header">
+                    <i class="ph ph-user"></i>
+                    <h2>Обо мне</h2>
+                </div>
+                <p>Я — начинающий frontend-разработчик с сильным желанием развиваться и создавать качественные продукты. У меня есть опыт работы с современными технологиями, я быстро обучаюсь и легко нахожу общий язык с командой.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="ph ph-lightning"></i>
+                        <span>Ответственный</span>
+                    </div>
+                    <div class="feature">
+                        <i class="ph ph-star"></i>
+                        <span>Внимательный к деталям</span>
+                    </div>
+                    <div class="feature">
+                        <i class="ph ph-users"></i>
+                        <span>Командный игрок</span>
+                    </div>
+                </div>
+            </article>
+
+            <div class="quote-card reveal">
+                <p>«Хороший код — это не просто решение задачи, это забота о людях, которые будут его использовать».</p>
+            </div>
+        </section>
+
+        <!-- Опыт и Образование -->
+        <section class="grid-sections container">
+            <article id="experience" class="card dark-card reveal">
+                <div class="card__header">
+                    <i class="ph ph-briefcase"></i>
+                    <h2>Опыт работы</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Frontend-разработчик (стажировка)</h3>
+                        <span class="company">ООО «Digital Solutions» • 2024 — 2025</span>
+                        <ul class="timeline-list">
+                            <li>Разработка и поддержка веб-приложений на React</li>
+                            <li>Работа в команде по Agile/Scrum</li>
+                            <li>Участие в code review и написание unit-тестов</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Freelance</h3>
+                        <span class="company">2023 — 2024</span>
+                        <ul class="timeline-list">
+                            <li>Выполнение небольших проектов под ключ</li>
+                            <li>Кроссбраузерная и адаптивная верстка</li>
+                            <li>Интеграция с CMS и REST API</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="education" class="card reveal">
+                <div class="card__header">
+                    <i class="ph ph-graduation-cap"></i>
+                    <h2>Образование</h2>
+                </div>
+                <div class="education-item">
+                    <h3>МПГУ</h3>
+                    <p>Бакалавриат, Прикладная математика и информатика</p>
+                    <span class="date">2022 — 2026</span>
+                </div>
+                <div class="education-item">
+                    <h3>Дополнительное образование</h3>
+                    <ul class="education-list">
+                        <li>Курс «Frontend-разработка» (HTML, CSS, JS)</li>
+                        <li>Курс «React с нуля до PRO»</li>
+                        <li>Курс «TypeScript для разработчиков»</li>
+                        <li>Курс «Английский язык (B2)»</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article id="projects" class="card reveal">
+                <div class="card__header">
+                    <i class="ph ph-desktop"></i>
+                    <h2>Избранные проекты</h2>
+                </div>
+                <div class="project-list">
+                    <a href="#" class="project-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=200&auto=format&fit=crop" alt="TaskFlow" loading="lazy">
+                        <div class="project-info">
+                            <h3>TaskFlow</h3>
+                            <p>SPA для управления задачами. React, Redux Toolkit, TypeScript, Tailwind.</p>
+                        </div>
+                        <i class="ph ph-arrow-up-right"></i>
+                    </a>
+                    <a href="#" class="project-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=200&auto=format&fit=crop" alt="WeatherApp" loading="lazy">
+                        <div class="project-info">
+                            <h3>WeatherApp</h3>
+                            <p>Приложение прогноза погоды. Next.js, SSR, REST API, TypeScript.</p>
+                        </div>
+                        <i class="ph ph-arrow-up-right"></i>
+                    </a>
+                    <a href="#" class="project-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=200&auto=format&fit=crop" alt="Portfolio" loading="lazy">
+                        <div class="project-info">
+                            <h3>Portfolio</h3>
+                            <p>Сайт-визитка. React, Framer Motion, адаптивная верстка.</p>
+                        </div>
+                        <i class="ph ph-arrow-up-right"></i>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="contacts">
+            <div class="container contacts__container reveal">
+                <div class="contacts__info">
+                    <h2>Давайте сотрудничать!</h2>
+                    <p>Я открыт к новым возможностям, интересным проектам и предложениям. Напишите мне — буду рад обсудить сотрудничество!</p>
+                    <a href="mailto:mikhail.tokarev@mail.ru" class="btn btn--primary contacts__btn">Написать мне <i class="ph ph-arrow-right"></i></a>
+                </div>
+                
+                <div class="contacts__links">
+                    <a href="https://t.me/mikhail_tk" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        <i class="ph ph-telegram-logo"></i>
+                        <div>
+                            <span>Telegram</span>
+                            <strong>@mikhail_tk</strong>
+                        </div>
+                    </a>
+                    <a href="mailto:mikhail.tokarev@mail.ru" class="contact-link">
+                        <i class="ph ph-envelope-simple"></i>
+                        <div>
+                            <span>Почта</span>
+                            <strong>mikhail.tokarev@mail.ru</strong>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/mikhail-tokarev" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        <i class="ph ph-linkedin-logo"></i>
+                        <div>
+                            <span>LinkedIn</span>
+                            <strong>linkedin.com/in/mikhail-tokarev</strong>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="contacts__details">
+                    <a href="tel:+79991234567" class="contact-link">
+                        <i class="ph ph-phone"></i>
+                        <div>
+                            <span>Телефон</span>
+                            <strong>+7 (999) 123-45-67</strong>
+                        </div>
+                    </a>
+                    <div class="contact-link">
+                        <i class="ph ph-map-pin"></i>
+                        <div>
+                            <span>Город</span>
+                            <strong>Москва, Россия</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>© 2026 Михаил Токарев • Frontend-разработчик</p>
+            <p>Сделано с <i class="ph ph-heart"></i> и вниманием к деталям</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
