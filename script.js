@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Прелоадер
     const preloader = document.getElementById('preloader');
     window.addEventListener('load', () => {
         setTimeout(() => {
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     });
 
-    // 2. Смена темы (Dark/Light)
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
     const currentTheme = localStorage.getItem('theme') || 'light';
@@ -31,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Мобильное меню
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav__link');
@@ -51,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Анимация при скролле (Intersection Observer)
     const revealElements = document.querySelectorAll('.reveal');
     
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -68,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // 5. Эффект "липкой" шапки при скролле
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -78,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. Активная ссылка в навигации при скролле (Scroll Spy)
     const sections = document.querySelectorAll('section[id]');
     
     window.addEventListener('scroll', () => {
