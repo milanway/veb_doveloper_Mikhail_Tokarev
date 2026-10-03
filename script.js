@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeIcon = themeToggle.querySelector('i');
     const currentTheme = localStorage.getItem('theme') || 'light';
 
-    // Установка начальной темы
     if (currentTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
         themeIcon.classList.replace('ph-moon', 'ph-sun');
@@ -44,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    // Закрытие меню при клике на ссылку
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('open');
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Анимируем только один раз
+                observer.unobserve(entry.target);
             }
         });
     }, {
